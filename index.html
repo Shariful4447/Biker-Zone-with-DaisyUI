@@ -23,7 +23,8 @@
       extend: {
         colors: {
           clifford: '#da373d',
-          'bike-primary':'#E76F51'
+          'bike-primary':'#E76F51',
+          'bike-primary-bg':'rgba(231, 111, 81, 0.10)',
         }
       }
     }
@@ -37,7 +38,7 @@
 </style>
 </head>
 <body class="font-poppins">
-    <header>
+    <header class="md:container md:mx-auto">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -72,11 +73,95 @@
                 </div>
               </div>
         </nav>
+        <!-- Slider/carousel -->
+        <div class="carousel w-full lg:h-[600px] bg-bike-primary-bg">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="flex flex-col lg:flex-row lg:p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class=" text-6xl font-bold">
+                  Ride on Honda CBR 300R <br>
+                  With Smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis debitis ipsum qui voluptas, itaque vero.</p>
+                <button class="btn bg-bike-primary text-white">Buy Now</button>
+              </div>
+              <div class="flex-1">
+                <img src="./bike-Items/bike1.png" class="w-full" />
+              </div>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="flex flex-col lg:flex-row lg:p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class=" text-6xl font-bold">
+                  Ride on Honda CBR 300R <br>
+                  With Smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis debitis ipsum qui voluptas, itaque vero.</p>
+                <button class="btn bg-bike-primary text-white">Buy Now</button>
+              </div>
+              <div class="flex-1">
+                <img src="./bike-Items/bike2.png" class="w-full" />
+              </div>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="flex flex-col lg:flex-row lg:p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class=" text-6xl font-bold">
+                  Ride on Honda CBR 300R <br>
+                  With Smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis debitis ipsum qui voluptas, itaque vero.</p>
+                <button class="btn bg-bike-primary text-white">Buy Now</button>
+              </div>
+              <div class="flex-1">
+                <img src="./bike-Items/bike3.png" class="w-full" />
+              </div>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="flex flex-col lg:flex-row lg:p-24">
+              <div class="space-y-7 flex-1">
+                <h2 class=" text-6xl font-bold">
+                  Ride on Honda CBR 300R <br>
+                  With Smile
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis debitis ipsum qui voluptas, itaque vero.</p>
+                <button class="btn bg-bike-primary text-white">Buy Now</button>
+              </div>
+              <div class="flex-1">
+                <img src="./bike-Items/bike4.png" class="w-full" />
+              </div>
+
+            </div>
+            
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
     </header>
-    <main>
+    <main class="md:container md:mx-auto">
 
     </main>
-    <footer>
+    <footer class="md:container md:mx-auto">
 
     </footer>
 </body>
